@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Değişkenler</title>
+    <script type="text/javascript">
+        var x = 5;
+        var y = 6;
+        var z = x + y;
+        let a = 7;
+        let b = 12;
+        let c = a * b;
+
+        let t;
+        t = "A";
+    </script>
+</head>
+
+<body>
+    <h1>Değişkenler</h1>
+    <p>Değişken, program içindeki verileri muhafaza edecek alanlardır.</p>
+    <p>JS'de var, let ve const adındaki anahtarlarlar ile değişken tanımlaması kullanır</p>
+    <p>Değişkenlar tanımlanırken aşağıdaki kurallara uyulmalıdır.</p>
+    <ol>
+        <li>JS değişkenleri harflerle başlayabilir</li>
+        <li>$ (dolar) işaret ile başlayabilir</li>
+        <li> _ (alt çizgi) ile başlayabilir.</li>
+        <li>rakamla ya da sayısal değerlerle değişken tanımlanamaz. </li>
+        <li>JS'de karakter hassasiyeti vardır. lastName ile lastname farklı değişken isimlerini temsil eder.</li>
+        <li>Kelimeler arasında - (tire) kullanılarak oluşturulmuş değişkenler kabul edilmez. </li>
+        <li>Camel Case (Pascal Case) ya da Snake Case yapısı kullanılır.
+            <ol>
+                <li>Upper Camel Case: FirstName</li>
+                <li>Lower Camel Case: firstName</li>
+                <li>Snake Case: first_name</li>
+            </ol>
+        </li>
+
+    </ol>
+    <p>Değişkenler var, let ya da const ile tanımlanmalıdır.</p>
+    <p>const: program içinde sabit olarak kullanılacak değişklen değerlerini ifade eder.</p>
+    <p>var: değişken tanımlamada global bir yapıya sahiptir. Tip değişimine uygundur.</p>
+    <p>let: Belirli bir kapsam (scope) içinde kullanılır.</p>
+    <p>Değişkenler anahtar kelimelerden sonra kesinlikle yazılmalıdır.(identifier)</p>
+    <p>= operatörü atama operatörüdür, bellekte oluşturaln değişkene değer vermek için kullanılır.</p>
+    <p class="toplam_fiyat"></p>
+    <script>
+        const fiyatA = 34;
+        const fiyatB = 25;
+        let toplam = fiyatA + fiyatB;
+        var etiket = document.getElementsByClassName("toplam_fiyat")[0]
+        etiket.innerHTML = "Toplam Fiyat: " + toplam.toString();
+        etiket.style.color = "red";
+        etiket.style.fontSize = "x-large";
+        console.log(toplam);
+    </script>
+</body>
+
+</html>
